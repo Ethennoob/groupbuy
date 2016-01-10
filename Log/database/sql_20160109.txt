@@ -1,0 +1,1824 @@
+2016/01/09 11:37:56----
+select A.id,A.goods_id,A.leader,A.soft,A.stool,A.status,A.add_time,B.goods_name,B.price,B.num from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc
+
+2016/01/09 11:37:56----
+select count(1) from groups as A  left join goods as B on A.goods_id=B.id where A.is_on = 1
+
+2016/01/09 11:37:56----
+select A.id,A.goods_id,A.leader,A.soft,A.stool,A.status,A.add_time,B.goods_name,B.price,B.num from groups as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 order by A.id desc limit 0, 15
+
+2016/01/09 11:37:56----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 11:37:56----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 108 limit 0, 1
+
+2016/01/09 11:37:56----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 109 limit 0, 1
+
+2016/01/09 11:37:56----
+select `user_id` from `group_member` where  `is_on` = 1 AND `group_id` = 3
+
+2016/01/09 11:37:56----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 11:37:56----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 11:37:56----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 107 limit 0, 1
+
+2016/01/09 11:37:56----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 108 limit 0, 1
+
+2016/01/09 11:37:56----
+select `user_id` from `group_member` where  `is_on` = 1 AND `group_id` = 2
+
+2016/01/09 11:37:56----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 100 limit 0, 1
+
+2016/01/09 11:37:56----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 108 limit 0, 1
+
+2016/01/09 11:37:56----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 11:37:56----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 100 limit 0, 1
+
+2016/01/09 11:37:56----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 108 limit 0, 1
+
+2016/01/09 11:37:56----
+select `user_id` from `group_member` where  `is_on` = 1 AND `group_id` = 1
+
+2016/01/09 11:37:56----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 11:37:57----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 90 limit 0, 1
+
+2016/01/09 11:37:57----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 11:37:57----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 92 limit 0, 1
+
+2016/01/09 11:37:57----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 11:38:50----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+
+2016/01/09 11:38:50----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=89
+
+2016/01/09 11:38:50----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=89 order by A.add_time desc limit 0, 15
+
+2016/01/09 11:38:50----
+select `goods_album` from `goods` where  `id` = 3 limit 0, 1
+
+2016/01/09 11:38:50----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 11:52:54----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=89 limit 0, 1
+
+2016/01/09 11:52:59----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=2 limit 0, 1
+
+2016/01/09 11:52:59----
+select `goods_album` from `goods` where  `id` = 3 limit 0, 1
+
+2016/01/09 11:52:59----
+select `id`,`user_id`,`province`,`city`,`area`,`street`,`postcode`,`is_default`,`mobile`,`name`,`add_time`,`update_time`,`is_on` from `user_address` where  `is_on` = 1 AND `id` = 76 limit 0, 1
+
+2016/01/09 11:55:48----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=1 limit 0, 1
+
+2016/01/09 11:55:48----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 11:55:48----
+select `id`,`user_id`,`province`,`city`,`area`,`street`,`postcode`,`is_default`,`mobile`,`name`,`add_time`,`update_time`,`is_on` from `user_address` where  `is_on` = 1 AND `id` = 76 limit 0, 1
+
+2016/01/09 13:11:59----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=1 limit 0, 1
+
+2016/01/09 13:11:59----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 13:11:59----
+select `id`,`user_id`,`province`,`city`,`area`,`street`,`postcode`,`is_default`,`mobile`,`name`,`add_time`,`update_time`,`is_on` from `user_address` where  `is_on` = 1 AND `id` = 76 limit 0, 1
+
+2016/01/09 13:17:34----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+
+2016/01/09 13:17:34----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=89
+
+2016/01/09 13:17:34----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=89 order by A.add_time desc limit 0, 15
+
+2016/01/09 13:17:34----
+select `goods_album` from `goods` where  `id` = 3 limit 0, 1
+
+2016/01/09 13:17:34----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 13:17:47----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=89 limit 0, 1
+
+2016/01/09 13:17:51----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=1 limit 0, 1
+
+2016/01/09 13:17:51----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 13:17:51----
+select `id`,`user_id`,`province`,`city`,`area`,`street`,`postcode`,`is_default`,`mobile`,`name`,`add_time`,`update_time`,`is_on` from `user_address` where  `is_on` = 1 AND `id` = 76 limit 0, 1
+
+2016/01/09 13:52:11----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.goods_id=B.id  goods as C   order by A.add_time desc
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'goods as C   order by A.add_time desc' at line 1
+2016/01/09 13:52:35----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.goods_id=B.id  goods as C   order by A.add_time desc
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'goods as C   order by A.add_time desc' at line 1
+2016/01/09 13:52:35----
+select count(1) from group_member as A  left join groups as B on A.goods_id=B.id  goods as C   where A.is_on = 1 and A.user_id=86
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'goods as C   where A.is_on = 1 and A.user_id=86' at line 1
+2016/01/09 13:53:29----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.goods_id=B.id  goods as C   order by A.add_time desc
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'goods as C   order by A.add_time desc' at line 1
+2016/01/09 13:53:29----
+select count(1) from group_member as A  left join groups as B on A.goods_id=B.id  goods as C   where A.is_on = 1 and A.user_id=86
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'goods as C   where A.is_on = 1 and A.user_id=86' at line 1
+2016/01/09 13:54:30----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.goods_id=B.id  goods as C   order by A.add_time desc
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'goods as C   order by A.add_time desc' at line 1
+2016/01/09 13:54:30----
+select count(1) from group_member as A  left join groups as B on A.goods_id=B.id  goods as C   where A.is_on = 1 and A.user_id=86
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'goods as C   where A.is_on = 1 and A.user_id=86' at line 1
+2016/01/09 13:56:14----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id order by A.add_time desc
+
+2016/01/09 13:56:14----
+select count(1) from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=86
+
+2016/01/09 13:56:14----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=86 order by A.add_time desc limit 0, 15
+
+2016/01/09 13:56:14----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 13:56:14----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 13:57:52----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id order by A.add_time desc
+
+2016/01/09 13:57:52----
+select count(1) from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=86
+
+2016/01/09 13:57:52----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=86 order by A.add_time desc limit 0, 15
+
+2016/01/09 13:57:52----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 13:57:52----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:18:34----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id order by A.add_time desc
+
+2016/01/09 14:18:34----
+select count(1) from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=89
+
+2016/01/09 14:18:34----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=89 order by A.add_time desc limit 0, 15
+
+2016/01/09 14:18:34----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:19:28----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:19:28----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:24:03----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:24:03----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:24:27----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:24:27----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:32:43----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:32:43----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:41:08----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:41:08----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:41:08----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 1
+
+2016/01/09 14:41:08----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 1 order by id desc limit 0, 15
+
+2016/01/09 14:41:08----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 14:41:08----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 92 limit 0, 1
+
+2016/01/09 14:41:08----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 14:41:08----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 90 limit 0, 1
+
+2016/01/09 14:41:09----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 14:41:16----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:41:16----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:41:16----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 1
+
+2016/01/09 14:41:16----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 1 order by id desc limit 0, 15
+
+2016/01/09 14:41:16----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 14:41:16----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 92 limit 0, 1
+
+2016/01/09 14:41:16----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 14:41:16----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 90 limit 0, 1
+
+2016/01/09 14:41:16----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 14:41:31----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:41:31----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:41:31----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 1
+
+2016/01/09 14:41:31----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 1 order by id desc limit 0, 15
+
+2016/01/09 14:41:31----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 14:41:31----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 92 limit 0, 1
+
+2016/01/09 14:41:31----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 14:41:31----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 90 limit 0, 1
+
+2016/01/09 14:41:31----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 14:42:13----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:42:13----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:42:13----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 1
+
+2016/01/09 14:42:13----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 1 order by id desc limit 0, 15
+
+2016/01/09 14:42:13----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 14:42:13----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 92 limit 0, 1
+
+2016/01/09 14:42:13----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 14:42:13----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 90 limit 0, 1
+
+2016/01/09 14:42:13----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 14:43:01----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:43:01----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:43:01----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 1
+
+2016/01/09 14:43:01----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 1 order by id desc limit 0, 15
+
+2016/01/09 14:43:01----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 14:43:01----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 92 limit 0, 1
+
+2016/01/09 14:43:01----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 14:43:01----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 90 limit 0, 1
+
+2016/01/09 14:43:01----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 14:43:20----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:43:20----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:43:20----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 1
+
+2016/01/09 14:43:20----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 1 order by id desc limit 0, 15
+
+2016/01/09 14:43:20----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 14:43:20----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 92 limit 0, 1
+
+2016/01/09 14:43:20----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 14:43:20----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 90 limit 0, 1
+
+2016/01/09 14:43:20----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 14:43:33----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:43:33----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:43:33----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 1
+
+2016/01/09 14:43:33----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 1 order by id desc limit 0, 15
+
+2016/01/09 14:43:33----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 14:43:33----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 92 limit 0, 1
+
+2016/01/09 14:43:33----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 14:43:33----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 90 limit 0, 1
+
+2016/01/09 14:43:33----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 14:45:29----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:45:29----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:45:29----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 1
+
+2016/01/09 14:45:29----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 1 order by id desc limit 0, 15
+
+2016/01/09 14:45:29----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 14:45:30----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 92 limit 0, 1
+
+2016/01/09 14:45:30----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 14:45:30----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 90 limit 0, 1
+
+2016/01/09 14:45:30----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 14:45:52----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:45:52----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:45:52----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 1
+
+2016/01/09 14:45:52----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 1 order by id desc limit 0, 15
+
+2016/01/09 14:45:52----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 14:45:52----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 92 limit 0, 1
+
+2016/01/09 14:45:52----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 14:45:52----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 90 limit 0, 1
+
+2016/01/09 14:45:52----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 14:46:59----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:46:59----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:46:59----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 2
+
+2016/01/09 14:46:59----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 2 order by id desc limit 0, 15
+
+2016/01/09 14:46:59----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 108 limit 0, 1
+
+2016/01/09 14:46:59----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 100 limit 0, 1
+
+2016/01/09 14:48:00----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:48:00----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:48:00----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 2
+
+2016/01/09 14:48:00----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 2 order by id desc limit 0, 15
+
+2016/01/09 14:48:00----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 108 limit 0, 1
+
+2016/01/09 14:48:01----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 100 limit 0, 1
+
+2016/01/09 14:48:07----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:48:07----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:48:07----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 1
+
+2016/01/09 14:48:07----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 1 order by id desc limit 0, 15
+
+2016/01/09 14:48:07----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 14:48:07----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 92 limit 0, 1
+
+2016/01/09 14:48:07----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 14:48:07----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 90 limit 0, 1
+
+2016/01/09 14:48:07----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 14:49:42----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 14:49:42----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 14:49:42----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 1
+
+2016/01/09 14:49:42----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 1 order by id desc limit 0, 15
+
+2016/01/09 14:49:42----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 14:49:42----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 92 limit 0, 1
+
+2016/01/09 14:49:42----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 14:49:42----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 90 limit 0, 1
+
+2016/01/09 14:49:42----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 15:47:35----
+select `id` from `goods` where  `is_on` = 1 AND `id` = '4' limit 0, 1
+
+2016/01/09 15:47:35----
+select `id` from `user` where  `is_on` = 1 AND `id` = '86' limit 0, 1
+
+2016/01/09 15:47:35----
+select `id` from `user` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = '86' limit 0, 1
+Unknown column 'is_default' in 'where clause'
+2016/01/09 15:47:50----
+select `id` from `goods` where  `is_on` = 1 AND `id` = '4' limit 0, 1
+
+2016/01/09 15:47:50----
+select `id` from `user` where  `is_on` = 1 AND `id` = '86' limit 0, 1
+
+2016/01/09 15:47:50----
+select `id` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = '86' limit 0, 1
+
+2016/01/09 15:47:50----
+insert into `bill` (`bill_sn`,`user_id`,`goods_id`,`add_time`) values (?,?,?,?)
+
+2016/01/09 15:49:36----
+select `id` from `goods` where  `is_on` = 1 AND `id` = '4' limit 0, 1
+
+2016/01/09 15:49:36----
+select `id` from `user` where  `is_on` = 1 AND `id` = '88' limit 0, 1
+
+2016/01/09 15:49:36----
+select `id` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = '88' limit 0, 1
+
+2016/01/09 15:49:36----
+insert into `bill` (`bill_sn`,`address_id`,`user_id`,`goods_id`,`add_time`) values (?,?,?,?,?)
+
+2016/01/09 15:50:55----
+select `id` from `goods` where  `is_on` = 1 AND `id` = '4' limit 0, 1
+
+2016/01/09 15:50:55----
+select `id` from `user` where  `is_on` = 1 AND `id` = '88' limit 0, 1
+
+2016/01/09 15:50:55----
+select `id` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = '88' limit 0, 1
+
+2016/01/09 15:50:55----
+insert into `bill` (`bill_sn`,`address_id`,`user_id`,`goods_id`,`type`,`add_time`) values (?,?,?,?,?,?)
+
+2016/01/09 15:51:16----
+select `id` from `goods` where  `is_on` = 1 AND `id` = '4' limit 0, 1
+
+2016/01/09 15:51:16----
+select `id` from `user` where  `is_on` = 1 AND `id` = '88' limit 0, 1
+
+2016/01/09 15:51:16----
+select `id` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = '88' limit 0, 1
+
+2016/01/09 15:51:16----
+insert into `bill` (`bill_sn`,`address_id`,`user_id`,`goods_id`,`add_time`) values (?,?,?,?,?)
+
+2016/01/09 15:53:24----
+select `id` from `goods` where  `is_on` = 1 AND `id` = '4' limit 0, 1
+
+2016/01/09 15:53:24----
+select `id` from `user` where  `is_on` = 1 AND `id` = '88' limit 0, 1
+
+2016/01/09 15:53:24----
+select `id` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = '88' limit 0, 1
+
+2016/01/09 15:53:24----
+insert into `bill` (`bill_sn`,`address_id`,`user_id`,`goods_id`,`type`,`add_time`) values (?,?,?,?,?,?)
+
+2016/01/09 15:53:48----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:53:48----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=88
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:53:48----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=88 order by A.add_time desc limit 0, 15
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:53:54----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:53:54----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=88
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:53:54----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=88 order by A.add_time desc limit 0, 15
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:53:54----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:53:54----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=88
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:53:54----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=88 order by A.add_time desc limit 0, 15
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:53:55----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:53:55----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=88
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:53:55----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=88 order by A.add_time desc limit 0, 15
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:53:55----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:53:55----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=88
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:53:55----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=88 order by A.add_time desc limit 0, 15
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:54:08----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:54:08----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=89
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:54:08----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=89 order by A.add_time desc limit 0, 15
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:54:13----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:54:13----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=88
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:54:13----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=88 order by A.add_time desc limit 0, 15
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:54:40----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=7 limit 0, 1
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:54:42----
+select A.id,A.logistics_num,A.goods_id,A.order_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=7 limit 0, 1
+Unknown column 'A.order_sn' in 'field list'
+2016/01/09 15:55:53----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=7 limit 0, 1
+
+2016/01/09 15:55:53----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 15:55:53----
+select `id`,`user_id`,`province`,`city`,`area`,`street`,`postcode`,`is_default`,`mobile`,`name`,`add_time`,`update_time`,`is_on` from `user_address` where  `is_on` = 1 AND `id` = 74 limit 0, 1
+
+2016/01/09 15:55:59----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+
+2016/01/09 15:55:59----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=88
+
+2016/01/09 15:55:59----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=88 order by A.add_time desc limit 0, 15
+
+2016/01/09 15:55:59----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 16:56:39----
+select `id`,`bill_sn`,`goods_id`,`user_id`,`group_id`,`type` from `bill` where  `is_on` = 1 AND `status` = 0 AND `id` = 7 limit 0, 1
+
+2016/01/09 16:56:39----
+insert into `groups` (`goods_id`,`leader`,`add_time`) values (?,?,?)
+
+2016/01/09 16:56:39----
+select `id` from `groups` where  `is_on` = 1 AND `leader` = 88 limit 0, 1
+
+2016/01/09 16:56:39----
+insert into `group_member` (`group_id`,`user_id`,`add_time`) values (?,?,?)
+
+2016/01/09 16:56:53----
+select A.id,A.goods_id,A.leader,A.soft,A.stool,A.status,A.add_time,B.goods_name,B.price,B.num from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc
+
+2016/01/09 16:56:53----
+select count(1) from groups as A  left join goods as B on A.goods_id=B.id where A.is_on = 1
+
+2016/01/09 16:56:53----
+select A.id,A.goods_id,A.leader,A.soft,A.stool,A.status,A.add_time,B.goods_name,B.price,B.num from groups as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 order by A.id desc limit 0, 15
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = null limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = null limit 0, 1
+
+2016/01/09 16:56:53----
+select `user_id` from `group_member` where  `is_on` = 1 AND `group_id` = 4
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 108 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 109 limit 0, 1
+
+2016/01/09 16:56:53----
+select `user_id` from `group_member` where  `is_on` = 1 AND `group_id` = 3
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 107 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 108 limit 0, 1
+
+2016/01/09 16:56:53----
+select `user_id` from `group_member` where  `is_on` = 1 AND `group_id` = 2
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 100 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 108 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 100 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 108 limit 0, 1
+
+2016/01/09 16:56:53----
+select `user_id` from `group_member` where  `is_on` = 1 AND `group_id` = 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 90 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 92 limit 0, 1
+
+2016/01/09 16:56:53----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 16:57:09----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id order by A.add_time desc
+
+2016/01/09 16:57:09----
+select count(1) from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=89
+
+2016/01/09 16:57:09----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=89 order by A.add_time desc limit 0, 15
+
+2016/01/09 16:57:09----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 16:57:16----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id order by A.add_time desc
+
+2016/01/09 16:57:16----
+select count(1) from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=88
+
+2016/01/09 16:57:16----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=88 order by A.add_time desc limit 0, 15
+
+2016/01/09 16:57:16----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 16:57:16----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 16:58:53----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 16:58:53----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 16:58:53----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 4
+
+2016/01/09 16:58:53----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 4 order by id desc limit 0, 15
+
+2016/01/09 16:58:53----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 17:46:51----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 17:46:51----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 17:46:51----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 4
+
+2016/01/09 17:47:02----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id order by A.add_time desc
+
+2016/01/09 17:47:02----
+select count(1) from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=88
+
+2016/01/09 17:47:02----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=88 order by A.add_time desc limit 0, 15
+
+2016/01/09 17:47:02----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 17:47:05----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 17:47:05----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 17:47:05----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 4
+
+2016/01/09 17:47:39----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 17:47:39----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 17:47:39----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 3
+
+2016/01/09 17:47:39----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 3 order by id desc limit 0, 15
+
+2016/01/09 17:47:39----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 17:48:36----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 17:48:36----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 17:48:36----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 3
+
+2016/01/09 17:48:36----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 3 order by id desc limit 0, 15
+
+2016/01/09 17:48:36----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 17:48:38----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 17:48:38----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 17:48:38----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 4
+
+2016/01/09 17:53:37----
+select `id`,`bill_sn`,`goods_id`,`user_id`,`group_id`,`type` from `bill` where  `is_on` = 1 AND `status` = 0 AND `id` = 7 limit 0, 1
+
+2016/01/09 17:53:37----
+insert into `groups` (`goods_id`,`leader`,`add_time`) values (?,?,?)
+
+2016/01/09 17:53:37----
+select `id` from `groups` where  `is_on` = 1 AND `leader` = 88 limit 0, 1
+
+2016/01/09 17:53:37----
+insert into `group_member` (`group_id`,`user_id`,`add_time`) values (?,?,?)
+
+2016/01/09 17:53:37----
+insert into `record` (`order_id`,`group_id`,`goods_id`,`user_id`,`add_time`) values (?,?,?,?,?)
+
+2016/01/09 17:56:04----
+select `id`,`bill_sn`,`goods_id`,`user_id`,`group_id`,`type` from `bill` where  `is_on` = 1 AND `status` = 0 AND `id` = 7 limit 0, 1
+
+2016/01/09 17:56:04----
+insert into `groups` (`goods_id`,`leader`,`add_time`) values (?,?,?)
+
+2016/01/09 17:56:04----
+select `id` from `groups` where  `is_on` = 1 AND `leader` = 88 limit 0, 1
+
+2016/01/09 17:56:04----
+insert into `group_member` (`group_id`,`user_id`,`add_time`) values (?,?,?)
+
+2016/01/09 17:56:04----
+insert into `record` (`order_id`,`group_id`,`goods_id`,`user_id`,`add_time`) values (?,?,?,?,?)
+
+2016/01/09 17:57:55----
+select `id`,`bill_sn`,`goods_id`,`user_id`,`group_id`,`type` from `bill` where  `is_on` = 1 AND `status` = 0 AND `id` = 7 limit 0, 1
+
+2016/01/09 17:57:55----
+insert into `groups` (`goods_id`,`leader`,`add_time`) values (?,?,?)
+
+2016/01/09 17:57:55----
+select `id` from `groups` where  `is_on` = 1 AND `leader` = 88 limit 0, 1
+
+2016/01/09 17:57:55----
+insert into `group_member` (`group_id`,`user_id`,`add_time`) values (?,?,?)
+
+2016/01/09 17:57:55----
+insert into `record` (`order_id`,`group_id`,`goods_id`,`user_id`,`add_time`) values (?,?,?,?,?)
+
+2016/01/09 17:59:31----
+select `id`,`bill_sn`,`goods_id`,`user_id`,`group_id`,`type` from `bill` where  `is_on` = 1 AND `status` = 0 AND `id` = 7 limit 0, 1
+
+2016/01/09 17:59:31----
+insert into `groups` (`goods_id`,`leader`,`add_time`) values (?,?,?)
+
+2016/01/09 17:59:31----
+select `id` from `groups` where  `is_on` = 1 AND `leader` = 88 limit 0, 1
+
+2016/01/09 17:59:32----
+insert into `group_member` (`group_id`,`user_id`,`add_time`) values (?,?,?)
+
+2016/01/09 17:59:32----
+insert into `record` (`order_id`,`group_id`,`goods_id`,`user_id`,`add_time`) values (?,?,?,?,?)
+
+2016/01/09 18:00:22----
+select `id`,`bill_sn`,`goods_id`,`user_id`,`group_id`,`type` from `bill` where  `is_on` = 1 AND `status` = 0 AND `id` = 7 limit 0, 1
+
+2016/01/09 18:00:22----
+insert into `groups` (`goods_id`,`leader`,`add_time`) values (?,?,?)
+
+2016/01/09 18:00:22----
+select `id` from `groups` where  `is_on` = 1 AND `leader` = 88 limit 0, 1
+
+2016/01/09 18:00:22----
+insert into `group_member` (`group_id`,`user_id`,`add_time`) values (?,?,?)
+
+2016/01/09 18:00:22----
+insert into `record` (`order_id`,`group_id`,`goods_id`,`user_id`,`add_time`) values (?,?,?,?,?)
+
+2016/01/09 18:03:16----
+select `id`,`bill_sn`,`goods_id`,`user_id`,`group_id`,`type` from `bill` where  `is_on` = 1 AND `status` = 0 AND `id` = 7 limit 0, 1
+
+2016/01/09 18:03:16----
+insert into `groups` (`goods_id`,`leader`,`add_time`) values (?,?,?)
+
+2016/01/09 18:03:16----
+select `id` from `groups` where  `is_on` = 1 AND `leader` = 88 limit 0, 1
+
+2016/01/09 18:03:16----
+insert into `group_member` (`group_id`,`user_id`,`add_time`) values (?,?,?)
+
+2016/01/09 18:03:17----
+insert into `record` (`order_id`,`group_id`,`goods_id`,`user_id`,`add_time`) values (?,?,?,?,?)
+
+2016/01/09 18:04:07----
+select `id`,`bill_sn`,`goods_id`,`user_id`,`group_id`,`type` from `bill` where  `is_on` = 1 AND `status` = 0 AND `id` = 7 limit 0, 1
+
+2016/01/09 18:04:07----
+insert into `groups` (`goods_id`,`leader`,`add_time`) values (?,?,?)
+
+2016/01/09 18:04:07----
+select `id` from `groups` where  `is_on` = 1 AND `leader` = 88 limit 0, 1
+
+2016/01/09 18:04:07----
+insert into `group_member` (`group_id`,`user_id`,`add_time`) values (?,?,?)
+
+2016/01/09 18:04:08----
+insert into `record` (`order_id`,`group_id`,`goods_id`,`user_id`,`add_time`) values (?,?,?,?,?)
+
+2016/01/09 18:04:08----
+update `bill` set `status`=?,`pay_time`=? where  `is_on` = 1 AND `id` = 7
+
+2016/01/09 19:22:53----
+select `id`,`bill_sn`,`goods_id`,`user_id`,`group_id`,`type` from `bill` where  `is_on` = 1 AND `status` = 0 AND `id` = 7 limit 0, 1
+
+2016/01/09 19:23:08----
+select `id`,`bill_sn`,`goods_id`,`user_id`,`group_id`,`type` from `bill` where  `is_on` = 1 AND `status` = 0 AND `id` = 7 limit 0, 1
+
+2016/01/09 19:23:09----
+insert into `groups` (`goods_id`,`leader`,`add_time`) values (?,?,?)
+
+2016/01/09 19:23:09----
+select `id` from `groups` where  `is_on` = 1 AND `leader` = 88 limit 0, 1
+
+2016/01/09 19:23:09----
+insert into `group_member` (`group_id`,`user_id`,`add_time`) values (?,?,?)
+
+2016/01/09 19:23:09----
+insert into `record` (`bill_id`,`group_id`,`goods_id`,`user_id`,`add_time`) values (?,?,?,?,?)
+
+2016/01/09 19:23:09----
+update `bill` set `status`=?,`pay_time`=?,`update_time`=? where  `is_on` = 1 AND `id` = 7
+
+2016/01/09 19:36:47----
+select `id` from `goods` where  `is_on` = 1 AND `id` = '4' limit 0, 1
+
+2016/01/09 19:36:47----
+select `id` from `user` where  `is_on` = 1 AND `id` = '89' limit 0, 1
+
+2016/01/09 19:37:16----
+select `id` from `goods` where  `is_on` = 1 AND `id` = '4' limit 0, 1
+
+2016/01/09 19:37:16----
+select `id` from `user` where  `is_on` = 1 AND `id` = '89' limit 0, 1
+
+2016/01/09 19:37:16----
+select `id` from `groups` where  `is_on` = 1 AND `id` = '12' limit 0, 1
+
+2016/01/09 19:37:16----
+select `id` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = '89' limit 0, 1
+
+2016/01/09 19:37:16----
+insert into `bill` (`bill_sn`,`group_id`,`address_id`,`user_id`,`goods_id`,`type`,`add_time`) values (?,?,?,?,?,?,?)
+
+2016/01/09 19:37:26----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+
+2016/01/09 19:37:26----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=89
+
+2016/01/09 19:37:26----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=89 order by A.add_time desc limit 0, 15
+
+2016/01/09 19:37:26----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 19:37:26----
+select `goods_album` from `goods` where  `id` = 3 limit 0, 1
+
+2016/01/09 19:37:26----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 19:43:50----
+select A.id,A.goods_id,A.leader,A.soft,A.stool,A.status,A.add_time,B.goods_name,B.price,B.num from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc
+
+2016/01/09 19:43:50----
+select count(1) from groups as A  left join goods as B on A.goods_id=B.id where A.is_on = 1
+
+2016/01/09 19:43:50----
+select A.id,A.goods_id,A.leader,A.soft,A.stool,A.status,A.add_time,B.goods_name,B.price,B.num from groups as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 order by A.id desc limit 0, 15
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = null limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = null limit 0, 1
+
+2016/01/09 19:43:50----
+select `user_id` from `group_member` where  `is_on` = 1 AND `group_id` = 12
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 108 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 109 limit 0, 1
+
+2016/01/09 19:43:50----
+select `user_id` from `group_member` where  `is_on` = 1 AND `group_id` = 3
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 107 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 108 limit 0, 1
+
+2016/01/09 19:43:50----
+select `user_id` from `group_member` where  `is_on` = 1 AND `group_id` = 2
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 100 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 108 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 100 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img` from `user` where  `is_on` = 1 AND `id` = 108 limit 0, 1
+
+2016/01/09 19:43:50----
+select `user_id` from `group_member` where  `is_on` = 1 AND `group_id` = 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 90 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 92 limit 0, 1
+
+2016/01/09 19:43:50----
+select `nickname`,`user_img`,`openid` from `user` where  `is_on` = 1 AND `id` = 86 limit 0, 1
+
+2016/01/09 19:44:14----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc
+
+2016/01/09 19:44:14----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1
+
+2016/01/09 19:44:14----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 order by A.id desc limit 0, 15
+
+2016/01/09 19:44:14----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:44:14----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:44:14----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 19:44:14----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 88 limit 0, 1
+
+2016/01/09 19:44:14----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:44:14----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:44:14----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:44:14----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:48:12----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:48:13----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:48:13----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:48:22----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:48:22----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:48:22----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:48:24----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:48:24----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:48:24----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:48:27----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:48:27----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:48:27----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:48:28----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:48:28----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:48:28----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:48:29----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:48:29----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:48:29----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:48:38----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:48:38----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:48:38----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:49:16----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:49:16----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:49:16----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:49:20----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:49:20----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:49:20----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:50:00----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:50:00----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:50:00----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:51:01----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:51:01----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = null limit 0, 1
+
+2016/01/09 19:51:01----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = null limit 0, 1
+
+2016/01/09 19:51:29----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:51:29----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = null limit 0, 1
+
+2016/01/09 19:51:29----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = null limit 0, 1
+
+2016/01/09 19:52:06----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:52:08----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = null limit 0, 1
+
+2016/01/09 19:52:08----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = null limit 0, 1
+
+2016/01/09 19:52:22----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:52:23----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = null limit 0, 1
+
+2016/01/09 19:52:23----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = null limit 0, 1
+
+2016/01/09 19:52:59----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:53:06----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:53:32----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:53:33----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:53:34----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:53:34----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:53:34----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 order by A.id desc limit 0, 15
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:54:22----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:54:22----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:54:22----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 order by A.id desc limit 0, 15
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:54:23----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:54:23----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:54:23----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 order by A.id desc limit 0, 15
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:54:28----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:54:28----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=89
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:54:28----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=89 order by A.add_time desc limit 0, 15
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:54:30----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=1 limit 0, 1
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:54:45----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.end_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+Unknown column 'A.end_time' in 'field list'
+2016/01/09 19:55:18----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:55:27----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:55:27----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:55:27----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:55:30----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:55:30----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:55:31----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:55:35----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:55:35----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:55:35----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:56:37----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:56:37----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:56:37----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `id` = 82 limit 0, 1
+
+2016/01/09 19:56:39----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:56:39----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:56:40----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `id` = 82 limit 0, 1
+
+2016/01/09 19:56:43----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 19:56:43----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:56:43----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `id` = 82 limit 0, 1
+
+2016/01/09 19:57:35----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=7 order by A.id desc limit 0, 1
+
+2016/01/09 19:57:35----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 19:57:35----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `id` = 74 limit 0, 1
+
+2016/01/09 19:57:52----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=7 order by A.id desc limit 0, 1
+
+2016/01/09 19:57:52----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 19:57:52----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `id` = 74 limit 0, 1
+
+2016/01/09 19:58:01----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=8 order by A.id desc limit 0, 1
+
+2016/01/09 19:58:01----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:58:01----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `id` = 82 limit 0, 1
+
+2016/01/09 19:58:05----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc
+
+2016/01/09 19:58:05----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1
+
+2016/01/09 19:58:05----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 order by A.id desc limit 0, 15
+
+2016/01/09 19:58:05----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:58:05----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:58:05----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 19:58:05----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 88 limit 0, 1
+
+2016/01/09 19:58:05----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:58:05----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 19:58:06----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 19:58:07----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = 89 limit 0, 1
+
+2016/01/09 20:03:17----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc
+
+2016/01/09 20:03:17----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1
+
+2016/01/09 20:03:17----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 order by A.id desc limit 0, 15
+
+2016/01/09 20:03:17----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 20:03:17----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `id` = null limit 0, 1
+
+2016/01/09 20:03:17----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 20:03:17----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `id` = null limit 0, 1
+
+2016/01/09 20:03:17----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 20:03:17----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `id` = null limit 0, 1
+
+2016/01/09 20:03:17----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 20:03:17----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `id` = null limit 0, 1
+
+2016/01/09 20:03:24----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.id desc
+
+2016/01/09 20:03:24----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1
+
+2016/01/09 20:03:24----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 order by A.id desc limit 0, 15
+
+2016/01/09 20:03:24----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 20:03:24----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `id` = 82 limit 0, 1
+
+2016/01/09 20:03:24----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 20:03:24----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `id` = 74 limit 0, 1
+
+2016/01/09 20:03:24----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 20:03:25----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `id` = 76 limit 0, 1
+
+2016/01/09 20:03:25----
+select `nickname` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 20:03:25----
+select `name`,`mobile`,`province`,`city`,`area`,`street` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `id` = 76 limit 0, 1
+
+2016/01/09 20:03:41----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=1 limit 0, 1
+
+2016/01/09 20:03:41----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 20:03:41----
+select `id`,`user_id`,`province`,`city`,`area`,`street`,`postcode`,`is_default`,`mobile`,`name`,`add_time`,`update_time`,`is_on` from `user_address` where  `is_on` = 1 AND `id` = 76 limit 0, 1
+
+2016/01/09 20:04:06----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+
+2016/01/09 20:04:06----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=89
+
+2016/01/09 20:04:06----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=89 order by A.add_time desc limit 0, 15
+
+2016/01/09 20:04:06----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 20:04:06----
+select `goods_album` from `goods` where  `id` = 3 limit 0, 1
+
+2016/01/09 20:04:06----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 20:13:29----
+select `id`,`bill_sn`,`goods_id`,`user_id`,`group_id`,`type` from `bill` where  `is_on` = 1 AND `status` = 0 AND `id` = 7 limit 0, 1
+
+2016/01/09 20:13:31----
+select `id`,`bill_sn`,`goods_id`,`user_id`,`group_id`,`type` from `bill` where  `is_on` = 1 AND `status` = 0 AND `id` = 8 limit 0, 1
+
+2016/01/09 20:13:31----
+insert into `group_member` (`group_id`,`user_id`,`add_time`) values (?,?,?)
+
+2016/01/09 20:13:31----
+select `id` from `group_member` where  `is_on` = 1 AND `group_id` = 12
+
+2016/01/09 20:13:32----
+update `groups` set `soft`=?,`update_time`=? where  `is_on` = 1 AND `id` = 12
+
+2016/01/09 20:13:32----
+insert into `record` (`group_id`,`goods_id`,`user_id`,`add_time`) values (?,?,?,?)
+
+2016/01/09 20:13:32----
+update `bill` set `status`=?,`pay_time`=?,`update_time`=? where  `is_on` = 1 AND `id` = 8
+
+2016/01/09 20:15:15----
+select `id`,`bill_sn`,`goods_id`,`user_id`,`group_id`,`type` from `bill` where  `is_on` = 1 AND `status` = 0 AND `id` = 8 limit 0, 1
+
+2016/01/09 20:19:17----
+select `id` from `goods` where  `is_on` = 1 AND `id` = '4' limit 0, 1
+
+2016/01/09 20:19:17----
+select `id` from `user` where  `is_on` = 1 AND `id` = '87' limit 0, 1
+
+2016/01/09 20:19:17----
+select `id` from `groups` where  `is_on` = 1 AND `id` = '12' limit 0, 1
+
+2016/01/09 20:19:17----
+select `id` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = '87' limit 0, 1
+
+2016/01/09 20:19:17----
+insert into `bill` (`bill_sn`,`group_id`,`address_id`,`user_id`,`goods_id`,`type`,`add_time`) values (?,?,?,?,?,?,?)
+
+2016/01/09 20:19:26----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+
+2016/01/09 20:19:26----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=87
+
+2016/01/09 20:19:26----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=87 order by A.add_time desc limit 0, 15
+
+2016/01/09 20:19:26----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 20:19:36----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=9 limit 0, 1
+
+2016/01/09 20:19:36----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 20:19:36----
+select `id`,`user_id`,`province`,`city`,`area`,`street`,`postcode`,`is_default`,`mobile`,`name`,`add_time`,`update_time`,`is_on` from `user_address` where  `is_on` = 1 AND `id` = 66 limit 0, 1
+
+2016/01/09 20:20:33----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=9 limit 0, 1
+
+2016/01/09 20:20:33----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 20:20:33----
+select `id`,`user_id`,`province`,`city`,`area`,`street`,`postcode`,`is_default`,`mobile`,`name`,`add_time`,`update_time`,`is_on` from `user_address` where  `is_on` = 1 AND `id` = 66 limit 0, 1
+
+2016/01/09 20:20:38----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+
+2016/01/09 20:20:38----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=87
+
+2016/01/09 20:20:38----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=87 order by A.add_time desc limit 0, 15
+
+2016/01/09 20:20:38----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 20:21:01----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+
+2016/01/09 20:21:01----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=87
+
+2016/01/09 20:21:01----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=87 order by A.add_time desc limit 0, 15
+
+2016/01/09 20:21:01----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 20:21:10----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+
+2016/01/09 20:21:10----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=87
+
+2016/01/09 20:21:10----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=87 order by A.add_time desc limit 0, 15
+
+2016/01/09 20:21:10----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 20:21:18----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=9 limit 0, 1
+
+2016/01/09 20:21:18----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 20:21:18----
+select `id`,`user_id`,`province`,`city`,`area`,`street`,`postcode`,`is_default`,`mobile`,`name`,`add_time`,`update_time`,`is_on` from `user_address` where  `is_on` = 1 AND `id` = 66 limit 0, 1
+
+2016/01/09 20:24:48----
+select `id`,`bill_sn`,`goods_id`,`user_id`,`group_id`,`type` from `bill` where  `is_on` = 1 AND `status` = 0 AND `id` = 9 limit 0, 1
+
+2016/01/09 20:24:48----
+insert into `group_member` (`group_id`,`user_id`,`add_time`) values (?,?,?)
+
+2016/01/09 20:24:48----
+select `id` from `group_member` where  `is_on` = 1 AND `group_id` = 12
+
+2016/01/09 20:24:48----
+update `groups` set `stool`=?,`update_time`=? where  `is_on` = 1 AND `id` = 12
+
+2016/01/09 20:24:48----
+insert into `record` (`bill_id`,`group_id`,`goods_id`,`user_id`,`add_time`) values (?,?,?,?,?)
+
+2016/01/09 20:24:48----
+update `bill` set `status`=?,`pay_time`=?,`update_time`=? where  `is_on` = 1 AND `id` = 9
+
+2016/01/09 20:25:02----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id order by A.add_time desc
+
+2016/01/09 20:25:02----
+select count(1) from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=87
+
+2016/01/09 20:25:02----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=87 order by A.add_time desc limit 0, 15
+
+2016/01/09 20:25:02----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 20:25:05----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id order by A.add_time desc
+
+2016/01/09 20:25:05----
+select count(1) from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=89
+
+2016/01/09 20:25:05----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=89 order by A.add_time desc limit 0, 15
+
+2016/01/09 20:25:05----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 20:25:05----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 20:25:22----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/09 20:25:22----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/09 20:25:22----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 12
+
+2016/01/09 20:25:22----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 12 order by id desc limit 0, 15
+
+2016/01/09 20:25:23----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 87 limit 0, 1
+
+2016/01/09 20:25:23----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/09 20:25:23----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+
+2016/01/09 20:44:43----
+select `id` from `goods` where  `is_on` = 1 AND `id` = '4' limit 0, 1
+
+2016/01/09 20:44:44----
+select `id` from `user` where  `is_on` = 1 AND `id` = '87' limit 0, 1
+
+2016/01/09 20:44:44----
+select `id` from `groups` where  `is_on` = 1 AND `id` = '12' limit 0, 1
+
+2016/01/09 20:44:44----
+select `id` from `group_member` where  `is_on` = 1 AND `group_id` = '12' AND `user_id` = 'user_id' limit 0, 1
+
+2016/01/09 20:44:44----
+select `id` from `user_address` where  `is_on` = 1 AND `is_default` = 1 AND `user_id` = '87' limit 0, 1
+
+2016/01/09 20:44:44----
+insert into `bill` (`bill_sn`,`group_id`,`address_id`,`user_id`,`goods_id`,`type`,`add_time`) values (?,?,?,?,?,?,?)
+
+2016/01/09 20:45:09----
+select `id` from `goods` where  `is_on` = 1 AND `id` = '4' limit 0, 1
+
+2016/01/09 20:45:09----
+select `id` from `user` where  `is_on` = 1 AND `id` = '87' limit 0, 1
+
+2016/01/09 20:45:09----
+select `id` from `groups` where  `is_on` = 1 AND `id` = '12' limit 0, 1
+
+2016/01/09 20:45:09----
+select `id` from `group_member` where  `is_on` = 1 AND `group_id` = '12' AND `user_id` = '87' limit 0, 1
+
+2016/01/09 20:45:31----
+select `id` from `goods` where  `is_on` = 1 AND `id` = '4' limit 0, 1
+
+2016/01/09 20:45:31----
+select `id` from `user` where  `is_on` = 1 AND `id` = '87' limit 0, 1
+
+2016/01/09 20:45:31----
+select `id` from `groups` where  `is_on` = 1 AND `id` = '12' limit 0, 1
+
+2016/01/09 20:45:31----
+select `id` from `group_member` where  `is_on` = 1 AND `group_id` = '12' AND `user_id` = '87' limit 0, 1
+

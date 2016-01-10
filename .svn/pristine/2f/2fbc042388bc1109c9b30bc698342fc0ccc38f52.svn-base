@@ -11,7 +11,7 @@ use System\BaseHelper;
     /*
     * 开团列表联表查询class
     */
-    class BillHelper extends BaseHelper{
+    class GroupListHelper extends BaseHelper{
         /*
         *获取活动信息 
         * @param unknown $whereStmt
@@ -22,19 +22,18 @@ use System\BaseHelper;
         * @param string $sqlFunction
         * @return Ambigous <NULL, unknown, multitype:, \System\database\this>
         */
-        public function  getBillList($whereStmt, $bindParams = null, $bindTypes = null, $getOne = false, $order = null, $sqlFunction = null){
-            $this->BillListLinkedTable($fieldsName, $multiSqlStmt, $whereStmt, $bindParams, $bindTypes, $order, $sqlFunction);
+        public function  getGroupList($whereStmt, $bindParams = null, $bindTypes = null, $getOne = false, $order = null, $sqlFunction = null){
+            $this->GroupListLinkedTable($fieldsName, $multiSqlStmt, $whereStmt, $bindParams, $bindTypes, $order, $sqlFunction);
             return $this->getMulti($multiSqlStmt, $fieldsName, $getOne);
         }
-        public function getBillListListLength($whereStmt, $bindParams = null, $bindTypes = null, $getOne = true, $order = null) {
-            $this->BillListLinkedTable($fieldsName, $multiSqlStmt, $whereStmt, $bindParams, $bindTypes, $order);
+        public function getGroupListListLength($whereStmt, $bindParams = null, $bindTypes = null, $getOne = true, $order = null) {
+            $this->GroupListLinkedTable($fieldsName, $multiSqlStmt, $whereStmt, $bindParams, $bindTypes, $order);
             return $this->getMultiLength($multiSqlStmt, $fieldsName, $getOne);
         }
-        private function BillListLinkedTable(&$fieldsName, &$multiSqlStmt, $whereStmt, $bindParams = null, $bindTypes = null, $orderBy = null, $sqlFunction = null) {            
+        private function GroupListLinkedTable(&$fieldsName, &$multiSqlStmt, $whereStmt, $bindParams = null, $bindTypes = null, $orderBy = null, $sqlFunction = null) {            
             $fieldsName = array(
-                    'Bill as A' => 'id,logistics_num,goods_id,bill_sn,group_id,user_id,address_id,status,add_time,
-                    pay_time,post_time,done_time',
-                    'goods as B' => 'goods_name,price,goods_album',
+                    'groups as A' => 'id,goods_id,leader,soft,stool,status,add_time',
+                    'goods as B' => 'goods_name,price,num',
                     
             );
             $multiSqlStmt = array(
