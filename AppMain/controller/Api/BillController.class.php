@@ -180,7 +180,60 @@ class BillController extends Baseclass {
         //返回数据，参见System/BaseClass.class.php方法
         $this->R(['billOneDetail'=>$billOneDetail]);
     }
-    
+    /**
+     * 取消订单
+     */
+    public function cancelBill(){
+        $this->V(['bill_id'=>['egNum',null,true]]);
+        $id = intval($_POST['bill_id']);
+        //判断是否有这个订单
+        $bill = $this->table('bill')->where(['is_on'=>1,'id'=>$id,'status'=>0])->get(['id'],true);
+            if(!$bill){
+                $this->R('',70009);
+            }
+        $cancel = $this->table('bill')->where(['is_on'=>1,'id'=>$id])->update(['status'=>5]);
+        if ($cancel) {
+            $this->R('',40001);
+        }
+        $this->R();
+
+    }
+    /**
+     * 删除订单
+     */
+    public function deleteBill(){
+        $this->V(['bill_id'=>['egNum',null,true]]);
+        $id = intval($_POST['bill_id']);
+        //判断是否有这个订单
+        $bill = $this->table('bill')->where(['is_on'=>1,'id'=>$id,'status'=>5])->get(['id'],true);
+            if(!$bill){
+                $this->R('',70009);
+            }
+        $cancel = $this->table('bill')->where(['is_on'=>1,'id'=>$id])->update(['is_on'=>0]);
+        if ($cancel) {
+            $this->R('',40001);
+        }
+        $this->R();
+
+    }
+    /**
+     * 删除订单
+     */
+    public function doneBill(){
+        $this->V(['bill_id'=>['egNum',null,true]]);
+        $id = intval($_POST['bill_id']);
+        //判断是否有这个订单
+        $bill = $this->table('bill')->where(['is_on'=>1,'id'=>$id,'status'=>3])->get(['id'],true);
+            if(!$bill){
+                $this->R('',70009);
+            }
+        $cancel = $this->table('bill')->where(['is_on'=>1,'id'=>$id])->update(['status'=>4]);
+        if ($cancel) {
+            $this->R('',40001);
+        }
+        $this->R();
+
+    }
 
     public function getExpress(){
         $this->V(['logistics_number'=>['egNum',null,true]]);

@@ -1,0 +1,84 @@
+2016/01/21 19:29:14----
+select count(*) from `goods` where  `is_on` = 1
+
+2016/01/21 19:29:14----
+select `id`,`goods_name`,`goods_title`,`goods_album`,`num`,`price`,`market_price` from `goods` where  `is_on` = 1 order by add_time desc limit 0, 15
+
+2016/01/21 19:39:38----
+select `id`,`goods_name`,`goods_title`,`num`,`group_time`,`price`,`cost_price`,`market_price`,`goods_album`,`discount_rate`,`is_show`,`stock`,`add_time`,`update_time`,`is_on` from `goods` where  `id` = 4 AND `is_on` = 1 limit 0, 1
+
+2016/01/21 19:39:38----
+select `id` from `record` where  `goods_id` = 4 AND `is_on` = 1
+
+2016/01/21 19:53:35----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=1 limit 0, 1
+
+2016/01/21 19:53:35----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/21 19:53:35----
+select `id`,`user_id`,`province`,`city`,`area`,`street`,`postcode`,`is_default`,`mobile`,`name`,`add_time`,`update_time`,`is_on` from `user_address` where  `is_on` = 1 AND `id` = 76 limit 0, 1
+
+2016/01/21 22:18:07----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.id=1 limit 0, 1
+
+2016/01/21 22:18:07----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/21 22:18:07----
+select `id`,`user_id`,`province`,`city`,`area`,`street`,`postcode`,`is_default`,`mobile`,`name`,`add_time`,`update_time`,`is_on` from `user_address` where  `is_on` = 1 AND `id` = 76 limit 0, 1
+
+2016/01/21 22:25:17----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id order by A.add_time desc
+
+2016/01/21 22:25:17----
+select count(1) from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=89
+
+2016/01/21 22:25:17----
+select A.id,A.logistics_num,A.goods_id,A.bill_sn,A.group_id,A.user_id,A.address_id,A.status,A.add_time,A.pay_time,A.post_time,A.done_time,B.goods_name,B.price,B.goods_album from Bill as A  left join goods as B on A.goods_id=B.id where A.is_on = 1 and A.user_id=89 order by A.add_time desc limit 0, 15
+
+2016/01/21 22:25:17----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/21 22:25:17----
+select `goods_album` from `goods` where  `id` = 3 limit 0, 1
+
+2016/01/21 22:25:17----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/21 22:28:09----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id order by A.add_time desc
+
+2016/01/21 22:28:09----
+select count(1) from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=89
+
+2016/01/21 22:28:09----
+select A.id,A.user_id,A.group_id,A.add_time,B.goods_id,C.goods_name,C.price,C.num,C.goods_album from group_member as A  left join groups as B on A.group_id=B.id left join goods as C on B.goods_id=C.id where A.is_on = 1 and A.user_id=89 order by A.add_time desc limit 0, 15
+
+2016/01/21 22:28:09----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/21 22:28:09----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/21 22:36:30----
+select A.id,A.goods_id,B.goods_name,B.price,B.market_price,B.num,B.goods_album,B.group_time,B.add_time from groups as A  left join goods as B on A.goods_id=B.id order by A.id desc limit 0, 1
+
+2016/01/21 22:36:30----
+select `goods_album` from `goods` where  `id` = 4 limit 0, 1
+
+2016/01/21 22:36:30----
+select count(*) from `group_member` where  `is_on` = 1 AND `group_id` = 12
+
+2016/01/21 22:36:30----
+select `id`,`user_id`,`add_time` from `group_member` where  `is_on` = 1 AND `group_id` = 12 order by id desc limit 0, 15
+
+2016/01/21 22:36:30----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 87 limit 0, 1
+
+2016/01/21 22:36:30----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 89 limit 0, 1
+
+2016/01/21 22:36:30----
+select `user_img` from `user` where  `is_on` = 1 AND `id` = 88 limit 0, 1
+

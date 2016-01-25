@@ -24,6 +24,7 @@ class UserController extends Baseclass {
      * 授权
      */
     public function getOpenID(){
+        $refer = $_GET['refer'];
         $weObj = new \System\lib\Wechat\Wechat($this->config("WEIXIN_CONFIG"));
         $this->weObj = $weObj;
         if (empty($_GET['code']) && empty($_GET['state'])) {
@@ -35,15 +36,15 @@ class UserController extends Baseclass {
                 $accessToken = $weObj->getOauthAccessToken();
                 $userInfo=$this->getUserInfo($accessToken);
                 // 是否有用户记录
-                $isUser = $this->table('user','DB_USER')->where(["openid" => $accessToken['openid'],"is_on"=>1])->get(null, true);
+                $isUser = $this->table('user')->where(["openid" => $accessToken['openid'],"is_on"=>1])->get(null, true);
                 /*var_dump($isUser);exit();*/
                 
                 if ($isUser==null) {
                     //没有此用户跳转至输入注册的页面
-                    header("LOCATION:".getHost()."/register.html");
+                    header("LOCATION:".getHost()."/register.html?refer=".$refer);
                 }else{
                 $userID=$isUser['id'];
-                $updateUser = $this->table('user','DB_USER')->where(['id'=>$userID])->update([
+                $updateUser = $this->table('user')->where(['id'=>$userID])->update([
                     'last_login'=>time(),
                     'last_ip'=>ip2long(getClientIp()),
                     'nickname'=>$userInfo['nickname'],
@@ -55,7 +56,7 @@ class UserController extends Baseclass {
                     'nickname'=>$isUser['nickname'],
                     'user_img'=>$isUser['user_img'],
                 ];
-                header("LOCATION:".getHost());//进入网站成功
+                header("LOCATION:".$refer);//进入网站成功
                 }
             }
         }
@@ -74,7 +75,7 @@ class UserController extends Baseclass {
                 $accessToken = $weObj->getOauthAccessToken();
                  
                 // 是否有用户记录
-                $isUser = $this->table('user','DB_USER')->where(["openid" => $accessToken['openid'],'is_on'=>1])->get(null, true);
+                $isUser = $this->table('user')->where(["openid" => $accessToken['openid'],'is_on'=>1])->get(null, true);
                 /*var_dump($isUser);exit();*/
                 
                 if ($isUser==null) {
@@ -83,7 +84,7 @@ class UserController extends Baseclass {
                 }else{
                 $userID=$isUser['id'];
                 
-                $updateUser = $this->table('user','DB_USER')->where(['id'=>$userID])->update(['last_login'=>time(),'last_ip'=>ip2long(getClientIp())]);
+                $updateUser = $this->table('user')->where(['id'=>$userID])->update(['last_login'=>time(),'last_ip'=>ip2long(getClientIp())]);
                 $_SESSION['userInfo']=[
                     'openid'=>$isUser['openid'],
                     'userid'=>$isUser['id'],
@@ -98,6 +99,7 @@ class UserController extends Baseclass {
      * 新用户从微信注册
      */
     public function getNewOpenID(){
+        $refer = $_GET['refer'];
         $weObj = new \System\lib\Wechat\Wechat($this->config("WEIXIN_CONFIG"));
         $this->weObj = $weObj;
         if (empty($_GET['code']) && empty($_GET['state'])) {
@@ -108,7 +110,7 @@ class UserController extends Baseclass {
         } elseif (intval($_GET['state']) == 1) {
                 $accessToken = $weObj->getOauthAccessToken();
                     $mobile = $_GET['phone'];
-                    $user = $this->table('user','DB_USER')->where(['is_on'=>1,'phone'=>$mobile])->get(['id'],true);
+                    $user = $this->table('user')->where(['is_on'=>1,'phone'=>$mobile])->get(['id'],true);
                     if(!$user){
                         //用户信息
                         $userInfo=$this->getUserInfo($accessToken);
@@ -116,11 +118,37 @@ class UserController extends Baseclass {
                         if (!$saveUser) {
                             $this->R('','40001');
                         }
-                        header("LOCATION:".getHost()."/Api/User/getOpenID");//
-                    }else{
-                        $this->R('','70000');//手机已注册
-                    }
+                        //header("LOCATION:".getHost()."/Api/User/getOpenID");
+                $userInfo=$this->getUserInfo($accessToken);
+                // 是否有用户记录
+                $isUser = $this->table('user')->where(["openid" => $accessToken['openid'],"is_on"=>1])->get(null, true);
+                /*var_dump($isUser);exit();*/
+                
+                if ($isUser==null) {
+                    //没有此用户跳转至输入注册的页面
+                    header("LOCATION:".getHost()."/register.html?refer=".$_GET['refer']);
                 }else{
+                $userID=$isUser['id'];
+                $updateUser = $this->table('user')->where(['id'=>$userID])->update([
+                    'last_login'=>time(),
+                    'last_ip'=>ip2long(getClientIp()),
+                    'nickname'=>$userInfo['nickname'],
+                    'user_img'=>$userInfo['headimgurl']]
+                    );
+                $_SESSION['userInfo']=[
+                    'openid'=>$isUser['openid'],
+                    'userid'=>$isUser['id'],
+                    'nickname'=>$isUser['nickname'],
+                    'user_img'=>$isUser['user_img'],
+                ];
+                header("LOCATION:".$refer);//进入网站成功
+                   
+                }
+
+                }else{
+                    $this->R('','70000');//手机已注册
+                }
+        }else{
             //用户取消授权
             $this->R('','90006');
         }
@@ -157,7 +185,7 @@ class UserController extends Baseclass {
                     //验证码错误
                     $this->R('','90008');
                 }else{
-        $user = $this->table('user','DB_USER')->where(['is_on'=>1,'phone'=>$mobile])->get(['id'],true);
+        $user = $this->table('user')->where(['is_on'=>1,'phone'=>$mobile])->get(['id'],true);
             if($user){
                 $this->R('','70000');//手机已注册
             }
@@ -200,7 +228,7 @@ class UserController extends Baseclass {
             'is_follow'=>$user_info['is_follow'],
             'add_time' => time()
         );
-        $result=$this->table('user','DB_USER')->save($data);
+        $result=$this->table('user')->save($data);
         if (!$result){
             die("系统错误，请稍后再试！");
         }
